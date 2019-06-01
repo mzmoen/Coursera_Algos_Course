@@ -72,8 +72,10 @@ for node in order:
         for x in gr[node]:
             if not visited[x]:
                 stack.insert(0, x)
-        visited[node] = True
-        stack.append(node)
+                visited[x] = True
+        if not visited[node]:
+            stack.append(node)
+            visited[node] = True
     while stack:
         stack_node = stack[0]
         visited[stack_node] = True
