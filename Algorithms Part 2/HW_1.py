@@ -27,7 +27,7 @@ order = []  # The finishing orders after the first pass
 
 ########################################################
 # Importing the graphs
-file = open("HW_1_Data.txt", "r") # I named the input file W1_SCC_edges.txt, but you can name it whatever you wish
+file = open("HW_1_Data.txt", "r")
 data = file.readlines()
 
 for line in data:
